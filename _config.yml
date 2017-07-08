@@ -2,7 +2,7 @@
 title: huddersfield-explorer.co.uk
 email: your-email@example.com
 description: Huddersfield Explored. In West Yorkshire England. An historic town with a fresh future.
-baseurl: "/from-sratch" # the subpath of your site, e.g. /blog
+baseurl: "/from-scratch" # the subpath of your site, e.g. /blog
 url: "https://chipsandcurrysauce.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 author:
