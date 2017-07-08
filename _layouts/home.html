@@ -1,8 +1,19 @@
 ---
-layout: default
+
 ---
-<footer class="footer" role="contentinfo">
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {% include footer.html %}
+  {% include head.html %}
 
-</footer>
+  <body>
+    {% include homepage/bgimage.html %}
+  <footer class="footer" role="contentinfo">
+
+    {% include footer.html %}
+
+  </footer>
+
+  </body>
+
+</html>
