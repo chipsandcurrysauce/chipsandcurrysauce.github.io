@@ -1,5 +1,5 @@
 .bgimage {
-  background-image: url('https://chipsandcurrysauce.github.io/from-scratch/images/header/banner.png');
+  background-image: url('{{ site.baseurl }}/images/header/banner.png');
   position: relative;
   overflow: visible;
   background-position: top;
