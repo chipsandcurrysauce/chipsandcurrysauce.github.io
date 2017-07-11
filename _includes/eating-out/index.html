@@ -4,39 +4,30 @@
   Places to eat out around town will be in categories on this page.
 
 <div>
-  <p>
+    <p>
       {% include eating-out/restaurants/index.html %}
 
-      {% for restaurants in site.pages %}
-        {% if restaurants.category == 'restaurants' %}
-       <li><a href="{{ site.baseurl }}/{{ restaurants.url }}">{{ restaurants.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-  </p>
-</div>
+      {% include loop-through-category/loop.html category ='restaurants' %}
 
-<div>
-  <p>
-      {% include eating-out/pub-grub/index.html %}
-
-      {% for pub-grub in site.pages %}
-        {% if pub-grub.category == 'pub-grub' %}
-       <li><a href="{{ site.baseurl }}/{{ pub-grub.url }}">{{ pub-grub.title }}</a></li>
-        {% endif %}
-      {% endfor %}
     </p>
 </div>
 
 <div>
-  <p>
+    <p>
+      {% include eating-out/pub-grub/index.html %}
+
+      {% include loop-through-category/loop.html category ='pub-grub' %}
+
+    </p>
+</div>
+
+<div>
+    <p>
       {% include eating-out/cafes/index.html %}
 
-            {% for cafes in site.pages %}
-              {% if cafes.category == 'cafes' %}
-             <li><a href="{{ site.baseurl }}/{{ cafes.url }}">{{ cafes.title }}</a></li>
-              {% endif %}
-            {% endfor %}
-  </p>
+      {% include loop-through-category/loop.html category ='cafes' %}
+    </p>
+
 </div>
 </body>
 </html>
