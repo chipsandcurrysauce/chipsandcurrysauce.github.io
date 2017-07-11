@@ -1,5 +1,5 @@
 {% for eating-out in site.pages %}
   {% if eating-out.category == include.category %}
- <li><a href="{{ eating-out.url | prepend:site.baseurl }}">{{ eating-out.title }}</a></li>
+ <li><a href="{{ eating-out.url | absolute_url }}">{{ eating-out.title }}</a></li>
   {% endif %}
 {% endfor %}
