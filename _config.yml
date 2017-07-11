@@ -13,7 +13,8 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-include: ['_pages', '_pages/bars-and-nightclubs', '_pages/eating-out', '_pages/future-investments', '_pages/history-of-huddersfield', '_pages/investig-in-education', '_pages/leisure-and-fitness', '_pages/parks-and-greenspaces', '_pages/shopping-and-business', '_pages/sporting-venues']
+  
+include: ['_pages']
 
 sass:
   sass_dir: _sass
