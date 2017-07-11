@@ -9,7 +9,7 @@
 
       {% for restaurants in site.pages %}
         {% if restaurants.category == 'restaurants' %}
-       <li><a href="{{ restaurants.url }}">{{ restaurants.title }}</a></li>
+       <li><a href="{{ site.baseurl }}/{{ restaurants.url }}">{{ restaurants.title }}</a></li>
         {% endif %}
       {% endfor %}
   </p>
@@ -21,7 +21,7 @@
 
       {% for pub-grub in site.pages %}
         {% if pub-grub.category == 'pub-grub' %}
-       <li><a href="{{ pub-grub.url }}">{{ pub-grub.title }}</a></li>
+       <li><a href="{{ site.baseurl }}/{{ pub-grub.url }}">{{ pub-grub.title }}</a></li>
         {% endif %}
       {% endfor %}
     </p>
@@ -33,7 +33,7 @@
 
             {% for cafes in site.pages %}
               {% if cafes.category == 'cafes' %}
-             <li><a href="{{ cafes.url }}">{{ cafes.title }}</a></li>
+             <li><a href="{{ site.baseurl }}/{{ cafes.url }}">{{ cafes.title }}</a></li>
               {% endif %}
             {% endfor %}
   </p>
