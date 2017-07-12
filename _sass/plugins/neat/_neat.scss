@@ -24,3 +24,16 @@
 @import "neat/mixins/grid-push";
 @import "neat/mixins/grid-shift";
 @import "neat/mixins/grid-visual";
+
+$custom-grid--thirds: (
+  columns: 3,
+  gutter: 60px,
+);
+
+.custom-grid--thirds {
+  @include grid-container;
+}
+
+.custom-grid--thirds__a-single-column {
+  @include grid-column(1, $custom-grid--thirds);
+}

@@ -4,9 +4,14 @@ permalink: eating-out/restaurants/index
 layout: pages/eating-out/eating-out
 
 ---
-
-<div>
-  <h1>Testing Restaurant pages</h1>
-  <p>{% include eating-out/restaurants/index.html %}</p>
-  <div><p>{% include loop-through-category/loop.html category ='restaurants' %}</p></div>
+<div class="article-layout">
+  <div class="article-layout__hero">
+    <h1>Testing Restaurant pages</h1>
+  </div>
+  <div class="article-layout__sidebar">
+    <h1>A list of all the restaurant's</h1>
+  </div>
+  <div class="article-layout__main">
+    {% include loop-through-category/loop.html category ='restaurants' %}
+  </div>
 </div>

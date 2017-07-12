@@ -1,0 +1,16 @@
+$custom-grid: (
+  columns: 12,
+  gutter: 10px,
+);
+
+.custom-grid {
+  @include grid-container;
+}
+
+.custom-grid__first-column {
+  @include grid-column(6, $custom-grid);
+}
+
+.custom-grid__second-column {
+  @include grid-column(6, $custom-grid);
+}
