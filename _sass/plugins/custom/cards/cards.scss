@@ -5,6 +5,15 @@
     padding-top: 1em;
 }
 
+.card-links {
+  text-decoration: none;
+  font-size: 1.2em;
+  &:hover {
+    cursor: pointer;
+    text-decoration:underline;
+    text-shadow: 0 0 0.5px #999;
+  }
+}
 .card {
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
@@ -34,7 +43,6 @@
   transition: all 0.2s ease-in-out;
 
   .card-image {
-    background-color: $card-image-hover-color;
     height: auto;
     max-height: 150px;
     overflow: hidden;
@@ -76,11 +84,10 @@
     }
   }
 
-  &:active {
-    background-color: $card-background;
+
 
     .card-header {
       background-color: $card-background;
     }
-  }
+
 }
