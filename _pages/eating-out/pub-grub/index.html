@@ -1,12 +1,17 @@
 ---
 title: Pub Grub
-permalink: /eating-out/pub-grub/index
-layout: pages/eating-out/pub-grub/pub-grub
+permalink: eating-out/pub-grub/index
+layout: pages/eating-out/eating-out
 
 ---
-
-<div>
-  <h1>Testing Pub Grub pages</h1>
-  <p>{% include eating-out/pub-grub/index.html %}</p>
-  {% include loop-through-category/loop.html category ='pub-grub' %}
+<div class="article-layout">
+  <div class="article-layout__hero">
+    <h1>Testing Pub-Grub pages</h1>
+  </div>
+  <div class="article-layout__main">
+    {% include loop-through-category/loop.html category ='pub-grub' %}
+  </div>
+  <div class="article-layout__sidebar">
+    <h1>A list of all the Pub's with food.</h1>
+  </div>
 </div>
