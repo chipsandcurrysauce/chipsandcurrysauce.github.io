@@ -13,7 +13,10 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  
+  - octopress-minify-html
+
+# minify_html: false
+
 include: ['_pages']
 
 sass:
