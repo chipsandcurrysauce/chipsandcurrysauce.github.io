@@ -1,6 +1,14 @@
 # Leverage Browser Caching START
 ExpiresActive On
-ExpiresByType images/jpg "access 7 days"
+ExpiresByType images/eating-out/restaurants/chinese/jpg "access 7 days"
+ExpiresByType images/eating-out/restaurants/indian/jpg "access 7 days"
+ExpiresByType images/eating-out/restaurants/italian/jpg "access 7 days"
+ExpiresByType images/eating-out/restaurants/mexican/jpg "access 7 days"
+ExpiresByType images/eating-out/restaurants/turkish/jpg "access 7 days"
+ExpiresByType images/eating-out/restaurants/vegetarian/jpg "access 7 days"
+ExpiresByType images/cards/jpg "access 7 days"
+ExpiresByType images/cards/jpg "access 7 days"
+ExpiresByType images/cards/jpg "access 7 days"
 ExpiresByType images/jpeg "access 7 days"
 ExpiresByType images/gif "access 7 days"
 ExpiresByType images/png "access 7 days"
