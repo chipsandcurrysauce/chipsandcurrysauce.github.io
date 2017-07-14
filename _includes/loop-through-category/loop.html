@@ -2,13 +2,13 @@
    {% for eating-out in site.pages %}
      {% if eating-out.category == include.category %}
    <div class="card">
-
+<a href="{{ eating-out.url | absolute_url }}" class="card-links">
      <p class="loopclass">
-       <a href="{{ eating-out.url | absolute_url }}" class="card-links">{{ eating-out.title }}<div class="card-image">
+       {{ eating-out.title }}<div class="card-image">
               <img src="{{ site.baseurl }}{{ eating-out.card-image }}" alt="{{ eating-out.card-descritpion }}">
-            </div></a>
+            </div>
             <div>{{ eating-out.card-descritpion }}</div>
-     </p>
+     </p></a>
    </div>
    {% endif %}
  {% endfor %}
